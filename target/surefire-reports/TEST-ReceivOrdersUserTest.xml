@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="ReceivOrdersUserTest" time="11.712" tests="2" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1251"/>
+    <property name="java.class.path" value="C:\Users\ekomo\IdeaProjects\Diplom_2\target\test-classes;C:\Users\ekomo\IdeaProjects\Diplom_2\target\classes;C:\Users\ekomo\.m2\repository\junit\junit\4.13.1\junit-4.13.1.jar;C:\Users\ekomo\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\ekomo\.m2\repository\io\rest-assured\rest-assured\4.4.0\rest-assured-4.4.0.jar;C:\Users\ekomo\.m2\repository\org\codehaus\groovy\groovy\3.0.8\groovy-3.0.8.jar;C:\Users\ekomo\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.8\groovy-xml-3.0.8.jar;C:\Users\ekomo\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\ekomo\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\ekomo\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\ekomo\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\ekomo\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\ekomo\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\ekomo\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\ekomo\.m2\repository\io\rest-assured\json-path\4.4.0\json-path-4.4.0.jar;C:\Users\ekomo\.m2\repository\org\codehaus\groovy\groovy-json\3.0.8\groovy-json-3.0.8.jar;C:\Users\ekomo\.m2\repository\io\rest-assured\rest-assured-common\4.4.0\rest-assured-common-4.4.0.jar;C:\Users\ekomo\.m2\repository\io\rest-assured\xml-path\4.4.0\xml-path-4.4.0.jar;C:\Users\ekomo\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\ekomo\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\ekomo\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\ekomo\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.3\jaxb-impl-2.3.3.jar;C:\Users\ekomo\.m2\repository\io\qameta\allure\allure-junit4\2.24.0\allure-junit4-2.24.0.jar;C:\Users\ekomo\.m2\repository\io\qameta\allure\allure-java-commons\2.24.0\allure-java-commons-2.24.0.jar;C:\Users\ekomo\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\ekomo\.m2\repository\io\qameta\allure\allure-model\2.24.0\allure-model-2.24.0.jar;C:\Users\ekomo\.m2\repository\io\qameta\allure\allure-test-filter\2.24.0\allure-test-filter-2.24.0.jar;C:\Users\ekomo\.m2\repository\io\qameta\allure\allure-rest-assured\2.24.0\allure-rest-assured-2.24.0.jar;C:\Users\ekomo\.m2\repository\io\qameta\allure\allure-attachments\2.24.0\allure-attachments-2.24.0.jar;C:\Users\ekomo\.m2\repository\org\freemarker\freemarker\2.3.31\freemarker-2.3.31.jar;C:\Users\ekomo\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;"/>
+    <property name="java.vm.vendor" value="Amazon.com Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
+    <property name="user.timezone" value="Europe/Moscow"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="RU"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Amazon Corretto\jdk11.0.15_9\bin"/>
+    <property name="sun.java.command" value="C:\Users\ekomo\AppData\Local\Temp\surefire8926304738339731674\surefirebooter-20231109145918093_3.jar C:\Users\ekomo\AppData\Local\Temp\surefire8926304738339731674 2023-11-09T14-59-17_570-jvmRun1 surefire-20231109145918093_1tmp surefire_0-20231109145918093_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\ekomo\IdeaProjects\Diplom_2\target\test-classes;C:\Users\ekomo\IdeaProjects\Diplom_2\target\classes;C:\Users\ekomo\.m2\repository\junit\junit\4.13.1\junit-4.13.1.jar;C:\Users\ekomo\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\ekomo\.m2\repository\io\rest-assured\rest-assured\4.4.0\rest-assured-4.4.0.jar;C:\Users\ekomo\.m2\repository\org\codehaus\groovy\groovy\3.0.8\groovy-3.0.8.jar;C:\Users\ekomo\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.8\groovy-xml-3.0.8.jar;C:\Users\ekomo\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\ekomo\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\ekomo\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\ekomo\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\ekomo\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\ekomo\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\ekomo\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\ekomo\.m2\repository\io\rest-assured\json-path\4.4.0\json-path-4.4.0.jar;C:\Users\ekomo\.m2\repository\org\codehaus\groovy\groovy-json\3.0.8\groovy-json-3.0.8.jar;C:\Users\ekomo\.m2\repository\io\rest-assured\rest-assured-common\4.4.0\rest-assured-common-4.4.0.jar;C:\Users\ekomo\.m2\repository\io\rest-assured\xml-path\4.4.0\xml-path-4.4.0.jar;C:\Users\ekomo\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\ekomo\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\ekomo\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\ekomo\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.3\jaxb-impl-2.3.3.jar;C:\Users\ekomo\.m2\repository\io\qameta\allure\allure-junit4\2.24.0\allure-junit4-2.24.0.jar;C:\Users\ekomo\.m2\repository\io\qameta\allure\allure-java-commons\2.24.0\allure-java-commons-2.24.0.jar;C:\Users\ekomo\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\ekomo\.m2\repository\io\qameta\allure\allure-model\2.24.0\allure-model-2.24.0.jar;C:\Users\ekomo\.m2\repository\io\qameta\allure\allure-test-filter\2.24.0\allure-test-filter-2.24.0.jar;C:\Users\ekomo\.m2\repository\io\qameta\allure\allure-rest-assured\2.24.0\allure-rest-assured-2.24.0.jar;C:\Users\ekomo\.m2\repository\io\qameta\allure\allure-attachments\2.24.0\allure-attachments-2.24.0.jar;C:\Users\ekomo\.m2\repository\org\freemarker\freemarker\2.3.31\freemarker-2.3.31.jar;C:\Users\ekomo\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="allure.results.directory" value="C:\Users\ekomo\IdeaProjects\Diplom_2\target/allure-results"/>
+    <property name="user.home" value="C:\Users\ekomo"/>
+    <property name="user.language" value="ru"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-04-19"/>
+    <property name="java.home" value="C:\Program Files\Amazon Corretto\jdk11.0.15_9"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\ekomo\IdeaProjects\Diplom_2"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\ekomo\AppData\Local\Temp\surefire8926304738339731674\surefirebooter-20231109145918093_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.15+9-LTS"/>
+    <property name="user.name" value="ekomo"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1251"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Corretto-11.0.15.9.1"/>
+    <property name="localRepository" value="C:\Users\ekomo\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-11/issues/"/>
+    <property name="java.io.tmpdir" value="C:\Users\ekomo\AppData\Local\Temp\"/>
+    <property name="idea.version" value="2023.2.4"/>
+    <property name="java.version" value="11.0.15"/>
+    <property name="user.dir" value="C:\Users\ekomo\IdeaProjects\Diplom_2"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Amazon Corretto\jdk11.0.15_9\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Amazon Corretto\jdk11.0.15_9\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Amazon Corretto\jdk11.0.15_9\bin;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Users\ekomo\AppData\Local\Microsoft\WindowsApps;C:\Users\ekomo\allure-commandline-2.24.0\allure-2.24.0\bin;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Amazon.com Inc."/>
+    <property name="java.vm.version" value="11.0.15+9-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="createReceivOrder_expOk_test" classname="ReceivOrdersUserTest" time="4.349">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Date: Thu, 09 Nov 2023 11:59:50 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NGNjOWI2OWVkMjgwMDAxYjM3ZGViOCIsImlhdCI6MTY5OTUzMTE5MCwiZXhwIjoxNjk5NTMyMzkwfQ.HmNWRsAkkOFscc1iJ7XDjiDlibKEzKj4vom_3yzHRFY
+ETag: W/"164-fEHLFXFtCIWFBfBv8lsqQzMC3gw"
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=3%2BF2LOFk5VD%2BIWP%2BfTAjlC7iY2YbouOTle8KKgd2jaMXdROkx4k8HFCC%2FrQemuOWnSOa%2BhzA0YR8Vt3K6UoOnkiwcc0O1hZnLW03reyRy9yJPLBYTqpYt4NEjFOt1ekQ8IO5YeX4sWKtthBr4FhdSomT%2Bmo%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8235e4564def66fe-AMS
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+{
+    "success": true,
+    "user": {
+        "email": "elenau@ya.ru",
+        "name": "Elena"
+    },
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NGNjOWI2OWVkMjgwMDAxYjM3ZGViOCIsImlhdCI6MTY5OTUzMTE5MCwiZXhwIjoxNjk5NTMyMzkwfQ.HmNWRsAkkOFscc1iJ7XDjiDlibKEzKj4vom_3yzHRFY",
+    "refreshToken": "3c7e82980808dfc9f028b6170b887b02bbd0a2367e9eb4662c7e27081454209d2169960c73166a3d"
+}
+HTTP/1.1 200 OK
+Date: Thu, 09 Nov 2023 11:59:53 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"501-6Di6WQxOKHXB/qTPx+PZmyMbz60"
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=5fBIRq9d4OOQ7eiEFBUEVdg1nln4Ab2BlADBVheJyYRDK0R63XPwgMATdZbfevqGLgVVfpI829t7eEykCB6wiuSnOaiFUOR2g37jhQ9ltf2FD0locFynHGsd%2F3SBIjsM13I9BVK1ktImJ0xkBazdnT6qsY0%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8235e465fc110bdc-AMS
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+{
+    "success": true,
+    "name": "Био-марсианский метеоритный бургер",
+    "order": {
+        "ingredients": [
+            {
+                "_id": "61c0c5a71d1f82001bdaaa70",
+                "name": "Говяжий метеорит (отбивная)",
+                "type": "main",
+                "proteins": 800,
+                "fat": 800,
+                "carbohydrates": 300,
+                "calories": 2674,
+                "price": 3000,
+                "image": "https://code.s3.yandex.net/react/code/meat-04.png",
+                "image_mobile": "https://code.s3.yandex.net/react/code/meat-04-mobile.png",
+                "image_large": "https://code.s3.yandex.net/react/code/meat-04-large.png",
+                "__v": 0
+            },
+            {
+                "_id": "61c0c5a71d1f82001bdaaa71",
+                "name": "Биокотлета из марсианской Магнолии",
+                "type": "main",
+                "proteins": 420,
+                "fat": 142,
+                "carbohydrates": 242,
+                "calories": 4242,
+                "price": 424,
+                "image": "https://code.s3.yandex.net/react/code/meat-01.png",
+                "image_mobile": "https://code.s3.yandex.net/react/code/meat-01-mobile.png",
+                "image_large": "https://code.s3.yandex.net/react/code/meat-01-large.png",
+                "__v": 0
+            }
+        ],
+        "_id": "654cc9b99ed280001b37deba",
+        "owner": {
+            "name": "Elena",
+            "email": "elenau@ya.ru",
+            "createdAt": "2023-11-09T11:59:50.886Z",
+            "updatedAt": "2023-11-09T11:59:50.886Z"
+        },
+        "status": "done",
+        "name": "Био-марсианский метеоритный бургер",
+        "createdAt": "2023-11-09T11:59:53.337Z",
+        "updatedAt": "2023-11-09T11:59:53.513Z",
+        "number": 23887,
+        "price": 3424
+    }
+}
+HTTP/1.1 200 OK
+Date: Thu, 09 Nov 2023 11:59:54 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"15a-1W5/bV6mgkJJfstIng19DaJxfN0"
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=vZ2bc6EItvvWhEtbWEf3btQKHAv4ZiN227099uNwyJMrejAzJB2XWJzbod16uo8%2FPhYcEQdKvLmh%2BUEVZRRB7GiFbiYwlEDgY0ScMrhFIHCnmTOt0%2F%2Bf5DO8vOZdubV1ybnRXb6asLSOyZeHVFjuJhvabW8%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8235e46b4e150e36-AMS
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+{
+    "success": true,
+    "orders": [
+        {
+            "_id": "654cc9b99ed280001b37deba",
+            "ingredients": [
+                "61c0c5a71d1f82001bdaaa70",
+                "61c0c5a71d1f82001bdaaa71"
+            ],
+            "status": "done",
+            "name": "Био-марсианский метеоритный бургер",
+            "createdAt": "2023-11-09T11:59:53.337Z",
+            "updatedAt": "2023-11-09T11:59:53.513Z",
+            "number": 23887
+        }
+    ],
+    "total": 23887,
+    "totalToday": 40
+}
+HTTP/1.1 202 Accepted
+Date: Thu, 09 Nov 2023 11:59:54 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 54
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"36-hDmZnQ3Ou/ynnqAeC6TYmyseuzY"
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=lTYgEC%2BMKMdEABdxO2xAXU%2B3Ur9YBa6dv5TAMayc1GO4UflJmvl7Nj1xS5c1OTIYQzoAdoMmypvkc3X%2BkyXDBZ%2Bc28GooM9d42hrGz8TGIsg%2BQLxgXHA8d2sQWe2wTwRQzbEr6O1KA0lAFK0f26eFYmBjaE%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8235e46f1ae2661a-AMS
+alt-svc: h3=":443"; ma=86400
+
+{
+    "success": true,
+    "message": "User successfully removed"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="createReceivOrder_expFalse_test" classname="ReceivOrdersUserTest" time="7.351">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Date: Thu, 09 Nov 2023 11:59:55 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NGNjOWJiOWVkMjgwMDAxYjM3ZGViYiIsImlhdCI6MTY5OTUzMTE5NSwiZXhwIjoxNjk5NTMyMzk1fQ.NEmgJyZqFs-aIVxkPUCr5ZcM-5ODGr8Gqga1rk6ReKU
+ETag: W/"164-Oszi+zKKSwO1LAoy3nbKwH+4fpE"
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=CpwIgtumCokOn1R31xEGW%2BEc9KOU2Qp9rq2MBLiEy3JQu17pLW%2FC5tHt3K%2BrCitD47cicY%2FfI9W9k26Hj0g9liSVeQFyCzEUqDvztLVjNLNaW2brpqyLvmUmYV%2BUZ8xaFJ%2BnpDRpuhyYWCXbaYrRLtSWEVI%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8235e4720aac0b62-AMS
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+{
+    "success": true,
+    "user": {
+        "email": "elenau@ya.ru",
+        "name": "Elena"
+    },
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NGNjOWJiOWVkMjgwMDAxYjM3ZGViYiIsImlhdCI6MTY5OTUzMTE5NSwiZXhwIjoxNjk5NTMyMzk1fQ.NEmgJyZqFs-aIVxkPUCr5ZcM-5ODGr8Gqga1rk6ReKU",
+    "refreshToken": "3d061d17dc910cd24288607eb4a4d2bc6a53e991d42aefa192ee04daf8f48f72d6912417111bf4fa"
+}
+HTTP/1.1 200 OK
+Date: Thu, 09 Nov 2023 12:00:01 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"501-0CZUApG8TPDIgZMMbABSONH3wm4"
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=e1K4VKe773eAjqTJuBuZTUnneTC3zXKRMFqZkFQASPIeyP0ybmS4LtCPBC08ZY9%2Fwc0vF4yP8pXJIs92vQImftdZS4YucG9ygseuA1NGYjCUzZayxsJDLby%2BBEB0n9AcFnpRY64RZ7ycNm8flO7uYBr2Ks8%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8235e493fa23667a-AMS
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+{
+    "success": true,
+    "name": "Био-марсианский метеоритный бургер",
+    "order": {
+        "ingredients": [
+            {
+                "_id": "61c0c5a71d1f82001bdaaa70",
+                "name": "Говяжий метеорит (отбивная)",
+                "type": "main",
+                "proteins": 800,
+                "fat": 800,
+                "carbohydrates": 300,
+                "calories": 2674,
+                "price": 3000,
+                "image": "https://code.s3.yandex.net/react/code/meat-04.png",
+                "image_mobile": "https://code.s3.yandex.net/react/code/meat-04-mobile.png",
+                "image_large": "https://code.s3.yandex.net/react/code/meat-04-large.png",
+                "__v": 0
+            },
+            {
+                "_id": "61c0c5a71d1f82001bdaaa71",
+                "name": "Биокотлета из марсианской Магнолии",
+                "type": "main",
+                "proteins": 420,
+                "fat": 142,
+                "carbohydrates": 242,
+                "calories": 4242,
+                "price": 424,
+                "image": "https://code.s3.yandex.net/react/code/meat-01.png",
+                "image_mobile": "https://code.s3.yandex.net/react/code/meat-01-mobile.png",
+                "image_large": "https://code.s3.yandex.net/react/code/meat-01-large.png",
+                "__v": 0
+            }
+        ],
+        "_id": "654cc9c09ed280001b37debe",
+        "owner": {
+            "name": "Elena",
+            "email": "elenau@ya.ru",
+            "createdAt": "2023-11-09T11:59:55.326Z",
+            "updatedAt": "2023-11-09T11:59:55.326Z"
+        },
+        "status": "done",
+        "name": "Био-марсианский метеоритный бургер",
+        "createdAt": "2023-11-09T12:00:00.658Z",
+        "updatedAt": "2023-11-09T12:00:00.872Z",
+        "number": 23888,
+        "price": 3424
+    }
+}
+HTTP/1.1 401 Unauthorized
+Date: Thu, 09 Nov 2023 12:00:01 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 54
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"36-9ndkQYJpZ8s0sMN790Nuh0MLq/U"
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=SRC0BLDsWedW%2FTKPqerMav9SFm9L7vto5ZfTH6zmqIrjrlE460JDjNNDpDEBThKN4JdjboaE79rnbJC98vcSqilmlpS40Y%2F0TqN0rBN2CmijuZ8gm1V61FIEzOusg8u2K%2FOAEbb%2BXezQjYJLvxkxwfRJSjo%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8235e4983cf56576-AMS
+alt-svc: h3=":443"; ma=86400
+
+{
+    "success": false,
+    "message": "You should be authorised"
+}
+HTTP/1.1 202 Accepted
+Date: Thu, 09 Nov 2023 12:00:02 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 54
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"36-hDmZnQ3Ou/ynnqAeC6TYmyseuzY"
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=qAnaZIVR0cy0Qo3XEty7p4BFytGzmhavQpQm4eD2NwR3twbtDiesXU7ezJNc%2FeI1kuPYdDQyqYllYqV1PcrmmSZPh86KWdd5Soh4%2FrxLsQufgvJWq4FoLBKf4AWA2RTY2WT9MdMPR%2FVRXOLVl74nUWbeucE%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8235e49d18da66ba-AMS
+alt-svc: h3=":443"; ma=86400
+
+{
+    "success": true,
+    "message": "User successfully removed"
+}
+]]></system-out>
+  </testcase>
+</testsuite>
