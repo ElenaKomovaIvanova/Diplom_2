@@ -10,12 +10,12 @@ import org.junit.Before;
 import org.junit.Test;
 public class СhangUserDataTest {
     private static final String BURGER_URI = "https://stellarburgers.nomoreparties.site/";
-    private static final User USER = new User("elenaW@ya.ru", "4534", "Elena");
+    private static final User USER = new User("hhh@jjj.jj", "45c34", "Elena");
     private UserServiceClient client = new UserServiceClient();
     String accessToken;
-    String email;
-    String name;
-
+    private static final String EMAIL = "zxc@zxc.zxc";
+    private static final String PASSWORD = "112233";
+    private static final String NAME = "zxczxc";
     @Before
     public void client() {
         RequestSpecification requestSpecification =
@@ -28,28 +28,32 @@ public class СhangUserDataTest {
     }
 
     @Test
-    public void changUserEmail_expOk_test() {
+    public void changUserEmailTest() {
 
-        User user1 = new User("vlad@ya.ru", "4534", "Elena");
+        User user1 = new User(EMAIL, PASSWORD, NAME);
         ValidatableResponse response1 = client.changUserEmail(user1,accessToken);
-        response1.assertThat().body("email", CoreMatchers.is(email));
+        response1.assertThat()
+                .statusCode(200);
     }
 
     @Test
-    public void changUserName_expOk_test() {
+    public void changUserNameTest() {
 
-        User user1 = new User("elenaW@ya.ru", "4534", "Vlad");
+        User user1 = new User(EMAIL, PASSWORD, NAME);
         ValidatableResponse response1 = client.changUserEmail(user1,accessToken);
-        response1.assertThat().body("name", CoreMatchers.is(name));
+        response1.assertThat()
+                .statusCode(200);
     }
 
     @Test
-    public void changUserEmail_expFalse_test() {
+    public void changUserEmailNoAuthTest() {
 
-        User user1 = new User("vlad@ya.ru", "4534", "Elena");
+        User user1 = new User(EMAIL, PASSWORD, NAME);
         accessToken = "";
         ValidatableResponse response1 = client.changUserEmail(user1,accessToken);
-        response1.assertThat().body("success", CoreMatchers.is(false));
+        response1.assertThat()
+                .statusCode(401)
+                .body("success", CoreMatchers.is(false));
     }
 
 

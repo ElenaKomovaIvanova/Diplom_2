@@ -1,3 +1,4 @@
+import io.qameta.allure.Step;
 import io.restassured.response.ValidatableResponse;
 import io.restassured.specification.RequestSpecification;
 
@@ -14,6 +15,7 @@ public class OrderClient {
         this.requestSpecification = requestSpecification;
     }
 
+    @Step("Получение ингридиентов")
     public ValidatableResponse getInsr() {
         return given()
                 .spec(requestSpecification)
@@ -24,6 +26,7 @@ public class OrderClient {
                 .all();
     }
 
+    @Step("Создание заказа авторизованным пользователем")
     public ValidatableResponse createOrderAuth(Ingredients ingredients, String accessToken) {
         return given()
                 .spec(requestSpecification)
@@ -35,6 +38,7 @@ public class OrderClient {
                 .all();
     }
 
+    @Step("Получение заказа")
     public ValidatableResponse ReceivOrders(String accessToken) {
         return given()
                 .spec(requestSpecification)
@@ -44,6 +48,8 @@ public class OrderClient {
                 .log()
                 .all();
     }
+
+    @Step("Установка корректного списка ингредиентов для создания заказа")
     public String[] setIngredient() {
         String[] ingr = new String[2];
         ingr[0] = "61c0c5a71d1f82001bdaaa70";
@@ -51,6 +57,7 @@ public class OrderClient {
         return ingr;
     }
 
+    @Step("Установка некорректного списка ингредиентов для создания заказа")
     public String[] setIncorrectIngredient() {
         String[] ingr = new String[2];
         ingr[0] = "61c0c5ahhh";

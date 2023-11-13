@@ -31,41 +31,49 @@ public class CreateOrderTest {
     }
 
     @Test
-    public void createOrderAuth_expOk_test() {
+    public void createOrderAuthUserTest() {
         ingr = clientOrder.setIngredient();
         Ingredients ingredients = new Ingredients(ingr);
         ValidatableResponse response = clientUser.createUser(USER);
         accessToken = response.extract().body().jsonPath().getString("accessToken");
         ValidatableResponse response1 = clientOrder.createOrderAuth(ingredients, accessToken);
-        response1.assertThat().body("success", CoreMatchers.is(true));
+        response1.assertThat()
+                .statusCode(200)
+                .body("success", CoreMatchers.is(true));
     }
 
     @Test
-    public void createOrderNoAuth_expFalse_test() {
+    public void createOrderNoAuthUserTest() {
         ingr = clientOrder.setIngredient();
         Ingredients ingredients = new Ingredients(ingr);
         accessToken = "";
         ValidatableResponse response = clientOrder.createOrderAuth(ingredients, accessToken);
-        response.assertThat().body("success", CoreMatchers.is(false));
+        response.assertThat()
+                .statusCode(401)
+                .body("success", CoreMatchers.is(false));
     }
 
     @Test
-    public void createOrderAuthNoIngr_expFalse_test() {
+    public void createOrderAuthNoIngrTest() {
         Ingredients ingredients = new Ingredients(ingr);
         ValidatableResponse response = clientUser.createUser(USER);
         accessToken = response.extract().body().jsonPath().getString("accessToken");
         ValidatableResponse response1 = clientOrder.createOrderAuth(ingredients, accessToken);
-        response1.assertThat().body("success", CoreMatchers.is(false));
+        response1.assertThat()
+                .statusCode(400)
+                .body("success", CoreMatchers.is(false));
     }
 
     @Test
-    public void createOrderAuthIncorrectIng_expOk_test() {
+    public void createOrderAuthIncorrectIngTest() {
         ingr = clientOrder.setIncorrectIngredient();
         Ingredients ingredients = new Ingredients(ingr);
         ValidatableResponse response = clientUser.createUser(USER);
         accessToken = response.extract().body().jsonPath().getString("accessToken");
         ValidatableResponse response1 = clientOrder.createOrderAuth(ingredients, accessToken);
-        response1.assertThat().statusCode(500);
+        response1.assertThat()
+                .statusCode(500);
+
     }
 
     @After

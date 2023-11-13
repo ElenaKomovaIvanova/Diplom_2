@@ -4,5 +4,4 @@ public class Ingredients {
     public Ingredients(String[] ingredients) {
         this.ingredients = ingredients;
     }
-
 }

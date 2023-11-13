@@ -1,4 +1,5 @@
 import groovy.transform.ToString;
+import io.qameta.allure.Step;
 import io.restassured.response.ValidatableResponse;
 import io.restassured.specification.RequestSpecification;
 
@@ -20,6 +21,7 @@ public class UserServiceClient {
         this.requestSpecification = requestSpecification;
     }
 
+    @Step("Создание пользователя")
     public ValidatableResponse createUser(User user) {
         return given()
                 .spec(requestSpecification)
@@ -31,6 +33,7 @@ public class UserServiceClient {
                 .all();
     }
 
+    @Step("Авторизация пользователя")
     public ValidatableResponse loginUser(User user) {
         return given()
                 .spec(requestSpecification)
@@ -40,7 +43,7 @@ public class UserServiceClient {
                 .then();
     }
 
-
+    @Step("Удаление пользователя")
     public ValidatableResponse deleteUser(String accessToken) {
         return given()
                 .spec(requestSpecification)
@@ -52,6 +55,7 @@ public class UserServiceClient {
 
     }
 
+    @Step("Получение пользователя")
     public ValidatableResponse getUser (String accessToken) {
         return given()
                 .spec(requestSpecification)
@@ -63,6 +67,7 @@ public class UserServiceClient {
 
     }
 
+    @Step("Изменение имени пользователя")
     public ValidatableResponse changUserEmail (User user, String accessToken) {
         return given()
                 .spec(requestSpecification)

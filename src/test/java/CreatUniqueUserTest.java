@@ -22,28 +22,34 @@ import org.junit.Test;public class CreatUniqueUserTest {
     }
 
     @Test
-    public void createUniqueUser_expOk_test() {
+    public void createUniqueUserTest() {
 
         ValidatableResponse response = client.createUser(USER);
-        response.assertThat().body("success", CoreMatchers.is(true));
         accessToken = response.extract().body().jsonPath().getString("accessToken");
+        response.assertThat()
+                .statusCode(200)
+                .body("success", CoreMatchers.is(true));
     }
 
     @Test
-    public void createNoUniqueUser_expFalse_test() {
+    public void createNoUniqueUserTest() {
 
         ValidatableResponse response = client.createUser(USER);
         ValidatableResponse response1 = client.createUser(USER);
-        response1.assertThat().body("success", CoreMatchers.is(false));
         accessToken = response.extract().body().jsonPath().getString("accessToken");
+        response1.assertThat()
+                .statusCode(403)
+                .body("success", CoreMatchers.is(false));
     }
 
     @Test
-    public void createNoEmailUser_expFalse_test() {
+    public void createNoEmailUserTest() {
 
         ValidatableResponse response = client.createUser(USER1);
-        response.assertThat().body("success", CoreMatchers.is(false));
         accessToken = response.extract().body().jsonPath().getString("accessToken");
+        response.assertThat()
+                .statusCode(403)
+                .body("success", CoreMatchers.is(false));
     }
 
     @After

@@ -10,7 +10,7 @@ import org.junit.Test;
 public class SingInUserTest {
     private static final String BURGER_URI = "https://stellarburgers.nomoreparties.site/";
     private static final User USER = new User("mam@uh.ru", "4534", "Elena");
-    private static final User USER1 = new User("mam1@uh.ru", "4534", "Elena");
+    private static final User USER1 = new User("mamsd@uh.ru", "4534", "Elena");
     private UserServiceClient client = new UserServiceClient();
     String accessToken;
 
@@ -26,17 +26,22 @@ public class SingInUserTest {
     }
 
     @Test
-    public void LogIn_expOk_test() {
+    public void LogInTest() {
 
         ValidatableResponse response1 = client.loginUser(USER);
-        response1.assertThat().body("success", CoreMatchers.is(true));
+        response1.assertThat()
+                .statusCode(200)
+                .body("success", CoreMatchers.is(true));
 
     }
 
     @Test
     public void LogIn_expfalse_test() {
         ValidatableResponse response1 = client.loginUser(USER1);
-        response1.assertThat().body("success", CoreMatchers.is(false));
+        System.out.println(response1.extract().statusCode());
+        response1.assertThat()
+                .statusCode(401)
+                .body("success", CoreMatchers.is(false));
 
     }
 

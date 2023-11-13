@@ -27,14 +27,16 @@ public class ReceivOrdersUserTest {
     }
 
     @Test
-    public void createReceivOrder_expOk_test() {
+    public void createReceivOrderTest() {
         ingr = clientOrder.setIngredient();
         Ingredients ingredients = new Ingredients(ingr);
         ValidatableResponse response = clientUser.createUser(USER);
         accessToken = response.extract().body().jsonPath().getString("accessToken");
         clientOrder.createOrderAuth(ingredients, accessToken);
         ValidatableResponse response1 = clientOrder.ReceivOrders(accessToken);
-        response1.assertThat().body("success", CoreMatchers.is(true));
+        response1.assertThat()
+                .statusCode(200)
+                .body("success", CoreMatchers.is(true));
     }
 
     @Test
@@ -45,7 +47,9 @@ public class ReceivOrdersUserTest {
         accessToken = response.extract().body().jsonPath().getString("accessToken");
         clientOrder.createOrderAuth(ingredients, accessToken);
         ValidatableResponse response1 = clientOrder.ReceivOrders("");
-        response1.assertThat().body("success", CoreMatchers.is(false));
+        response1.assertThat()
+                .statusCode(401)
+                .body("success", CoreMatchers.is(false));
     }
 
     @After
