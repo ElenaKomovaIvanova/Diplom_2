@@ -10,10 +10,11 @@ import org.junit.Before;
 import org.junit.Test;
 public class СhangUserDataTest {
     private static final String BURGER_URI = "https://stellarburgers.nomoreparties.site/";
-    private static final User USER = new User("hhh@jjj.jj", "45c34", "Elena");
+    private static final User USER = new User("177h@jjj.jj", "45c34", "Elena");
     private UserServiceClient client = new UserServiceClient();
     String accessToken;
-    private static final String EMAIL = "zxc@zxc.zxc";
+    String accessTokeNoAuth;
+    private static final String EMAIL = "17zxc@zxc.zxc";
     private static final String PASSWORD = "112233";
     private static final String NAME = "zxczxc";
     @Before
@@ -49,8 +50,8 @@ public class СhangUserDataTest {
     public void changUserEmailNoAuthTest() {
 
         User user1 = new User(EMAIL, PASSWORD, NAME);
-        accessToken = "";
-        ValidatableResponse response1 = client.changUserEmail(user1,accessToken);
+        accessTokeNoAuth = "";
+        ValidatableResponse response1 = client.changUserEmail(user1,accessTokeNoAuth);
         response1.assertThat()
                 .statusCode(401)
                 .body("success", CoreMatchers.is(false));
